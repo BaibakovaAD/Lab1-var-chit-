@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        out.print("Задача 10 \nСумма разряда единиц\nВведите первое число: ");
+        out.print("Задача 1.10 \nСумма разряда единиц\nВведите первое число: ");
         int a, b;
         a = scanner.nextInt();
         out.print("Введите второе число: ");
