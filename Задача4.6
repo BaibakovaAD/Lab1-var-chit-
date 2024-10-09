@@ -1,0 +1,34 @@
+import static java.lang.System.out;
+import java.util.Arrays;
+import java.util.Random;
+
+public class Main {
+    public void reverse (int [] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+    }
+
+    public static void main (String[] args) {
+        Main methods = new Main();
+
+        out.print("Задача 6 \nЗапись массива справа на лево\n");
+
+        int[] array = new int[7];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(10);
+        }
+        out.println("Массив рандомных чисел " + Arrays.toString(array));
+
+        methods.reverse(array);
+        out.println("Реверс массива: " + Arrays.toString(array);
+    }
+}
