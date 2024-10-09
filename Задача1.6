@@ -8,8 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
         out.print("Задача 1.6 \nОпределение заглавной буквы в диапазоне A-Z\nВведите букву: ");
         char character = scanner.next().charAt(0);
-        out.println("Если введена заглавная буква A-Z выведется true, иначе false: " + isUpperCase(character) + "\n");
+        out.println("Если введена заглавная буква A-Z выведется true, иначе false: " + methods.isUpperCase(character) + "\n");
     }
 }
