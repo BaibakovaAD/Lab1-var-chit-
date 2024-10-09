@@ -24,7 +24,7 @@ public class Main {
         Main methods = new Main();
         Random random = new Random();
 
-        out.print("Задача 10 \nУдаление отрицательных значений в массиве\n");
+        out.print("Задача 4.10 \nУдаление отрицательных значений в массиве\n");
         int[] array = new int[5];
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(19) - 9;
