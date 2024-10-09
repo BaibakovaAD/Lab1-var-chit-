@@ -1,0 +1,22 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public String reverseListNumbs (int x) {
+        StringBuilder result = new StringBuilder();
+
+        for (int i = x; i >= 0; i--) {
+            result.append(i).append(" ");
+        }
+        return result.toString().trim();
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+        out.print("Задача 2 \nВывод чисел от самого большого до нуля\nВведите число: ");
+        int x;
+        x = scanner.nextInt();
+        out.println(methods.reverseListNumbs(x) + "\n");
+    }
+}
