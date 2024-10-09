@@ -30,7 +30,7 @@ public class Main {
 
     public static void main (String[] args) {
         Main methods = new Main();
-        out.print("Задача 10 \nДень недели\nВведите день недели: ");
+        out.print("Задача 2.10 \nДень недели\nВведите день недели: ");
         methods.printDays();
     }
 }
