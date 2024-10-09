@@ -2,7 +2,7 @@ import static java.lang.System.out;
 import java.util.Scanner;
 
 public class Main {
-    public static int sumLastCisl(int x) {
+    public static int sumLastNums(int x) {
         int lastCislo = x % 10;
         int secondLastChislo = (x / 10) % 10;
         return Math.abs(lastCislo + secondLastChislo);
@@ -12,6 +12,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         out.print("Задача 1.2 \nСумма последних двух цифр числа \nВведите желаемое число: ");
         int x = scanner.nextInt();
-        out.println("Сумма последних двух цифр числа = " + sumLastCisl(x) + "\n");
+        out.println("Сумма последних двух цифр числа = " + sumLastNums + "\n");
     }
 }
