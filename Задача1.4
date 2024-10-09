@@ -8,9 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
         out.print("Задача 1.4 \nЯвляется число положительным или отрицательным\nВведите число: ");
         int x;
         x = scanner.nextInt();
-        out.println("Если число положительное будет true, если отрицательное false: " + isPositive(x) + "\n");
+        out.println("Если число положительное будет true, если отрицательное false: " + methods.isPositive(x) + "\n");
     }
 }
