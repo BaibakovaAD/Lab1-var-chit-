@@ -1,0 +1,32 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public void guessGame() {
+        Random random = new Random();
+        int NumberRandom = random.nextInt(10);
+
+        int tries = 0;
+        Scanner scanner = new Scanner(System.in);
+        int userChislo = -1;
+        while (userChislo != NumberRandom) {
+            System.out.print("Введите число от 0 до 9: ");
+            userChislo = scanner.nextInt();
+            tries++;
+
+            if (userChislo == NumberRandom) {
+                out.println("Вы угадали число");
+            } else {
+                out.println("Вы не угадали число, попробуйте снова");
+            }
+        }
+        out.println("Количество попыток: " + tries);
+    }
+
+    public static void main (String[] args) {
+        Main methods = new Main();
+        out.print("\nЗадача 10 \nУгадай число загаданное компьютером\n");
+        methods.guessGame();
+    }
+}
