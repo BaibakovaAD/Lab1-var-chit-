@@ -1,0 +1,41 @@
+import static java.lang.System.out;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public int[] add (int [] arr, int x, int pos) {
+        int [] newArr = new int[arr.length + 1];
+
+        for (int i=0; i < pos; i++) {
+            newArr[i] = arr [i];
+        }
+        newArr[pos] = x;
+        for (int i = pos; i < arr.length; i++) {
+            newArr[i + 1] = arr [i];
+        }
+        return newArr;
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+
+        int x,pos;
+        out.print("Задача 4 \nДобавление в массив");
+
+        int[] array = new int[7];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(10);
+        }
+        out.println("Массив рандомных чисел " + Arrays.toString(array));
+
+        out.print("Введите добавляемое значение: ");
+        x = scanner.nextInt();
+        out.print("Введите позицию, куда вставить ваше значение: ");
+        pos = scanner.nextInt();
+        int[] newArr = methods.add(array, x, pos);
+        out.println("Новый массив: " + Arrays.toString(newArr) + "\n");
+    }
+}
