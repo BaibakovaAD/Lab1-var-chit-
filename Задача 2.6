@@ -1,0 +1,27 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public boolean sum3 (int x, int y, int z) {
+        if (x + y == z)
+            return true;
+        else if (x + z == y)
+            return true;
+        else if (y + z == x)
+            return true;
+        else return false;
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+        int x,y,z;
+        out.print("Задача 6 \nТройная сумма\nВведите первое число: ");
+        x = scanner.nextInt();
+        out.print("Введите второе число: ");
+        y = scanner.nextInt();
+        out.print("Введите третье число: ");
+        z = scanner.nextInt();
+        out.println("Если два любых числа можно сложить так, чтобы получить третье, то выводится true, иначе false: " + methods.sum3(x, y, z) + "\n");
+    }
+}
