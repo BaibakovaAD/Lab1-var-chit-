@@ -1,0 +1,35 @@
+import static java.lang.System.out;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public int findLast (int [] arr, int x) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == x) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+
+        int x;
+        out.print("Задача 2 \nПоиск последнего вхождения заданного значения");
+
+        int[] array = new int[7];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(10) + 1;
+        }
+        out.println("Массив рандомных чисел " + Arrays.toString(array) + "\n");
+
+        out.print("Введите проверяемое значение: ");
+        x = scanner.nextInt();
+        int index = methods.findLast(array, x);
+        out.println("Индекс последнего вхождения " + x + " в массив: " + index + "\n");
+    }
+}
