@@ -1,0 +1,36 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public void printDays() {
+        Scanner scanner = new Scanner(System.in);
+        String x = scanner.nextLine();
+        x = x.toLowerCase();
+        switch (x) {
+            case "понедельник":
+                out.println("Понедельник");
+            case "вторник":
+                out.println("Вторник");
+            case "среда":
+                out.println("Среда");
+            case "четверг":
+                out.println("Четверг");
+            case "пятница":
+                out.println("Пятница");
+            case "суббота":
+                out.println("Суббота");
+            case "воскресенье":
+                out.println("Воскресенье");
+                break;
+            default:
+                out.println("Это не день недели");
+                break;
+        }
+    }
+
+    public static void main (String[] args) {
+        Main methods = new Main();
+        out.print("Задача 10 \nДень недели\nВведите день недели: ");
+        methods.printDays();
+    }
+}
