@@ -8,10 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        out.print("Задача 8 \nОпределение деления нацело\nВведите делимое: ");
+        Main methods = new Main();
+        out.print("Задача 1.8 \nОпределение деления нацело\nВведите делимое: ");
         int a = scanner.nextInt();
         out.print("Введите делитель: ");
         int b = scanner.nextInt();
-        out.println("Есди делится, выводится true, если нет, то false: " + isDivisor(a, b) + "\n");
+        out.println("Есди делится, выводится true, если нет, то false: " + methods.isDivisor(a, b) + "\n");
     }
 }
