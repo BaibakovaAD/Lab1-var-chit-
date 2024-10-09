@@ -1,0 +1,26 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public int pow (int x, int y) {
+        if (y == 0) {
+            return 1;
+        }
+        int result = 1;
+        for (int i = 1; i <= y; i++) {
+            result *= x;
+        }
+        return result;
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+        out.print("Задача 4 \nВозведение в степень\nВведите число, которое надо возвести в степень: ");
+        int x,y;
+        x = scanner.nextInt();
+        out.print("Введите степень: ");
+        y = scanner.nextInt();
+        out.println("Число после возведения в степень равно: " + methods.pow(x, y) + "\n");
+    }
+}
