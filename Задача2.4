@@ -1,0 +1,25 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public String makeDecision(int x, int y) {
+        if (x > y) {
+            return x + " > " + y;
+        } else if (x < y) {
+            return x + " < " + y;
+        } else {
+            return x + " == " + y;
+        }
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+        int x,y;
+        out.print("Задача 4 \nСтрока сравнения\nВведите первое число: ");
+        x = scanner.nextInt();
+        out.print("Введите второе число: ");
+        y = scanner.nextInt();
+        out.println("Сравнение: " + methods.makeDecision(x, y) + "\n");
+    }
+}
