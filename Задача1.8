@@ -1,0 +1,17 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public static boolean Divisor (int a, int b) {
+        return a % b == 0;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        out.print("Задача 8 \nОпределение деления нацело\nВведите делимое: ");
+        int a = scanner.nextInt();
+        out.print("Введите делитель: ");
+        int b = scanner.nextInt();
+        out.println("Есди делится, выводится true, если нет, то false: " + Divisor(a, b) + "\n");
+    }
+}
