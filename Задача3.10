@@ -26,7 +26,7 @@ public class Main {
 
     public static void main (String[] args) {
         Main methods = new Main();
-        out.print("\nЗадача 10 \nУгадай число загаданное компьютером\n");
+        out.print("\nЗадача 3.10 \nУгадай число загаданное компьютером\n");
         methods.guessGame();
     }
 }
