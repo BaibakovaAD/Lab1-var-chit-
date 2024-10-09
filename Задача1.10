@@ -2,7 +2,7 @@ import static java.lang.System.out;
 import java.util.Scanner;
 
 public class Main {
-    public static int lastChiselSum(int a, int b) {
+    public static int lastNumSum(int a, int b) {
         return (a % 10 + b % 10);
     }
 
@@ -13,22 +13,22 @@ public class Main {
         a = scanner.nextInt();
         out.print("Введите второе число: ");
         b = scanner.nextInt();
-        a = lastChiselSum(a, b);
+        a = lastNumSum(a, b);
         out.println( "Первое число + второе = " + a);
 
         out.print("Введите третье число: ");
         b = scanner.nextInt();
-        a = lastChiselSum(a, b);
+        a = lastNumSum(a, b);
         out.println( "Сумма ед (1-2) + третье = " + a);
 
         out.print("Введите четвёртое число: ");
         b = scanner.nextInt();
-        a = lastChiselSum(a, b);
+        a = lastNumSum(a, b);
         out.println( "Сумма ед (1-3) + четвёртое = " + a);
 
         out.print("Введите пятое число: ");
         b = scanner.nextInt();
-        a = lastChiselSum(a, b);
+        a = lastNumSum(a, b);
         out.println( "Сумма ед (1-4) + пятое = " + a + "\n");
     }
 }
