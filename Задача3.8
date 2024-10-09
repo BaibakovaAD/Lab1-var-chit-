@@ -1,0 +1,22 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public void leftTriangle (int x) {
+        for (int i = 1; i <= x; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Main methods = new Main();
+        out.print("Задача 8 \nЛевый треугольник\nВведите из скольки строк вы хотите увидеть прямой треугольник по левому краю: ");
+        int x;
+        x = scanner.nextInt();
+        methods.leftTriangle(x);
+    }
+}
