@@ -1,0 +1,34 @@
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main {
+    public static int lastChiselSum(int a, int b) {
+        return (a % 10 + b % 10);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        out.print("Задача 10 \nСумма разряда единиц\nВведите первое число: ");
+        int a, b;
+        a = scanner.nextInt();
+        out.print("Введите второе число: ");
+        b = scanner.nextInt();
+        a = lastChiselSum(a, b);
+        out.println( "Первое число + второе = " + a);
+
+        out.print("Введите третье число: ");
+        b = scanner.nextInt();
+        a = lastChiselSum(a, b);
+        out.println( "Сумма ед (1-2) + третье = " + a);
+
+        out.print("Введите четвёртое число: ");
+        b = scanner.nextInt();
+        a = lastChiselSum(a, b);
+        out.println( "Сумма ед (1-3) + четвёртое = " + a);
+
+        out.print("Введите пятое число: ");
+        b = scanner.nextInt();
+        a = lastChiselSum(a, b);
+        out.println( "Сумма ед (1-4) + пятое = " + a + "\n");
+    }
+}
